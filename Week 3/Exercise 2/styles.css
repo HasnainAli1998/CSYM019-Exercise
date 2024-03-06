@@ -1,0 +1,45 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+header{
+    background: blue;
+}
+nav{
+    background: yellow;
+}
+main{
+    background: gray;
+}
+aside {
+    background: lightgreen;
+}
+footer {
+    background: green;
+}
+nav li {
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+/* Grid Styling */
+main{
+    padding:30px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-rows: repeat(); */
+}
+.header {
+    grid-column: 1 / 4;
+}
+.nav{
+    grid-column: 1 / 2;
+}
+.main {
+    grid-column: 2 / 4;
+}
+.footer{
+    grid-column: 1 /4;
+}
